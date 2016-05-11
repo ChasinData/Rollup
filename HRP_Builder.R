@@ -17,6 +17,6 @@ DMISPARENT <- c("0330","0061","0069","0086","0122","0121","RHC-A","0089","0060",
 
 All.Facilities <- as.data.frame(cbind(Site,HRP.name,Facility,UIC,Short,SiteCode,Parent.MTF,DMISPARENT,AHC))
 
-MTF.Only <-Rollup[-c(3,7,17:20), ]
+MTF.Only <-All.Facilities[-c(3,7,17:20), ]
 
-Short.Names=Rollup[ ,c(5,7,8)]
+Short.Names=All.Facilities[ ,c(5,7,8)]
